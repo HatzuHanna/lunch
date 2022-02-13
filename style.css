@@ -56,11 +56,13 @@
  .plato{
    display:flex;
    flex-direction: column;
-   height:auto;
+   height:max-content;
    width: 23%;
    /* outline: 2px solid rgb(0, 44, 189) ; */
    border-radius:59% 25% 23% 16% / 41% 18% 26% 26%;  
-   background-color: rgb(231, 186, 224);
+   background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 42%, rgba(233,148,201,1) 88%);
+   transition: 1s ease-in-out ;
  }
  
 .ajiaco, .changua, .arroz-pollo, .bandeja-paisa {
@@ -108,19 +110,24 @@ img:hover {
 }
 .plato:hover .info {
     transform: scale(1.05);
+    opacity: 1;
     margin-top: 1em;
     animation-timing-function: cubic-bezier(1, 0.12, 0.58, 1);
-    box-shadow: inset 6px 6px 32px -5.5px  rgb(199, 150, 177);
-    background: rgb(238,174,202);
-background: linear-gradient(65deg, rgba(238,174,202,1) 33%, rgba(148,187,233,1) 88%, rgba(148,187,233,1) 95%);
+    box-shadow: inset 6px 6px 32px -5.5px  rgb(252, 184, 223);
+    
 }
- 
+ .plato:hover{
+    border-radius: 23% 54% 41% 16% / 21% 55% 26% 26% ;
+     
+    box-shadow: inset 3px 3px 15px 8px #f7c8d2;
+    animation-timing-function: cubic-bezier(1, 0.12, 0.58, 1);
+ }
 
  .info{  
      font-size: 1.5em;
      width: 100%;
      height:max-content;
-     background-color: rgb(255, 187, 187);
+     background: linear-gradient(65deg, rgba(238,174,202,1) 33%, rgba(148,187,233,1) 88%, rgba(148,187,233,1) 95%);
      margin-top:0;
      border-radius:59% 25% 23% 16% / 41% 18% 26% 15%  ;
      padding:0;
@@ -130,7 +137,7 @@ background: linear-gradient(65deg, rgba(238,174,202,1) 33%, rgba(148,187,233,1) 
      padding-top: 1.7em;
      align-self:end;
      z-index: 0;  
-     transition: 0.8s ease-in-out ; 
+     transition: 0.8s ease-in ; 
      padding-right: 0;
     }
 
