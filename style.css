@@ -165,7 +165,7 @@ img:hover {
         height: 600px;
         background-size: 100%;
         background-image: url(acp.png);
-        border-radius:22% 19% 11% 14% / 13% 18% 9% 10% ;
+        border-radius:150px 80px 70px 50px;
         object-fit:cover;
         box-shadow: inset 3px 3px 10px 3px #ddd;
     }
@@ -198,8 +198,8 @@ img:hover {
          transition: none;
          transform: none;
          box-shadow: none;
-         border-radius: 12% 60% 11% 14% / 13% 10% 9% 10%  ;
-         height: max-content;
+         border-radius: 12% 45% 70px 50px ;
+          
          padding: 1em;
      }
 
