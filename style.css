@@ -137,14 +137,14 @@ background: linear-gradient(65deg, rgba(238,174,202,1) 33%, rgba(148,187,233,1) 
 
     .info h2{
         display: flex;
-        margin-right: auto;
+        padding-right: 1rem;
         width: 100%;
         text-align: right;
         line-height: .8em;
         /* background-color: brown; */
         justify-content: end;
         font-size: 1.5rem;
-      
+        
 
     }
     .info p{
