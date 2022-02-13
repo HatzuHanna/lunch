@@ -13,8 +13,7 @@
      padding: 0;
  }
 
-
-
+ 
  
 
  header{
@@ -35,7 +34,7 @@
 
  main{
      width: 100vw;
-     height:100vh;
+     height: 100vh;
      background: rgb(238,174,202);
      background: linear-gradient(175deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
      padding: 20px;
@@ -161,13 +160,24 @@ background: linear-gradient(65deg, rgba(238,174,202,1) 33%, rgba(148,187,233,1) 
 
 
  @media (max-width: 1000px) {
+    
+    main{
+      
+        height: max-content;
+        
+        background: linear-gradient(175deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        
+   }
+   
     .menu{
         width: 600px;
-        height: auto;
+        height: max-content;
         flex-direction: column;
+        
+        
     }
     .plato{
-        margin-top: 25px;
+        margin-top: 50px;
         width: 100%;
         height:auto;
         box-shadow: inset 3px 3px 10px 3px #ddd;
@@ -207,6 +217,7 @@ background: linear-gradient(65deg, rgba(238,174,202,1) 33%, rgba(148,187,233,1) 
          padding: 1em;
          height: max-content;
          z-index: 2;
+        
      }
 
      .info h2 {
