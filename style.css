@@ -13,6 +13,13 @@
      padding: 0;
  }
 
+ .css-transitions-only-after-page-load * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
  
  
 
@@ -167,7 +174,15 @@ img:hover {
 
 
  @media (max-width: 1000px) {
-    
+    .css-transitions-only-after-page-load * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
+        transition: none !important;
+      }
+     
+     
     main{
       
         height: max-content;
